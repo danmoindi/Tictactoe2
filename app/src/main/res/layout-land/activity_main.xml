@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="6dp"
+    android:background="@color/colorBackground"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <!--TextView to show user turns and winner-->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvXPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv0Points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:freezesText="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--Linear Layout with 3 rows and each row with 3 buttons-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp">
+
+        <!--Row 1-->
+
+        <Button
+            android:id="@+id/b00"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/b01"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:id="@+id/b02"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="2dp">
+
+        <!--Row 2-->
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:id="@+id/b12"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp"
+        android:gravity="center">
+
+        <!--Row 3-->
+
+        <Button
+            android:id="@+id/b20"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/b21"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp" />
+
+        <Button
+            android:id="@+id/b22"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/button_fontSize"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <!--Button to reset game -->
+        <Button
+            android:id="@+id/bNewGame"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/newgame"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:visibility="visible" />
+        <!--Button to reset game board-->
+        <Button
+            android:id="@+id/bReset"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/resetgame"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_marginLeft="130dp" />
+    </LinearLayout>
+
+</LinearLayout>
