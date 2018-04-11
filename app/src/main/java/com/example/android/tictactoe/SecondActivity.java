@@ -6,23 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class StartActivity extends AppCompatActivity implements View.OnClickListener {
+public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button bSingle;
-    Button bMulti;
+    Button b3Board;
+    Button b5Board;
     Button bExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.activity_second);
 
-        bSingle = findViewById(R.id.bSingle);
-        bMulti = findViewById(R.id.bMulti);
+        b3Board = findViewById(R.id.b3Board);
+        b5Board = findViewById(R.id.b5Board);
         bExit = findViewById(R.id.bExit);
 
-        bSingle.setOnClickListener(this);
-        bMulti.setOnClickListener(this);
+        b3Board.setOnClickListener(this);
+        b5Board.setOnClickListener(this);
         bExit.setOnClickListener(this);
     }
 
@@ -30,11 +30,11 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.bSingle:
-                openSecondActivity();
-                break;
-            case R.id.bMulti:
+            case R.id.b3Board:
                 openMainActivity();
+                break;
+            case R.id.b5Board:
+                openFiveActivity();
                 break;
             case R.id.bExit:
                 appExit();
@@ -47,8 +47,8 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         startActivity(intent);
     }
 
-    public void openSecondActivity() {
-        Intent intent = new Intent(this, SecondActivity.class);
+    public void openFiveActivity() {
+        Intent intent = new Intent(this, FiveActivity.class);
         startActivity(intent);
     }
 

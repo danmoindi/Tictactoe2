@@ -5,4 +5,6 @@
     <string name="multi_player">Multi Player</string>
     <string name="exit">Exit</string>
     <string name="single_player">Single Player</string>
+    <string name="five_board">5x5 Board</string>
+    <string name="Three_board">3x3 Board</string>
 </resources>
