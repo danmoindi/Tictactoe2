@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Tictactoe </string>
-    <string name="newgame">NEW</string>
-    <string name="resetgame">RESET</string>
+    <string name="new_game">NEW</string>
+    <string name="reset_game">RESET</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="exit">Exit</string>
+    <string name="single_player">Single Player</string>
 </resources>

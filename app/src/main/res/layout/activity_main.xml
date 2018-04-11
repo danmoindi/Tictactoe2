@@ -187,7 +187,7 @@
         android:layout_marginTop="19dp"
         android:background="@color/colorPrimary"
         android:padding="8dp"
-        android:text="@string/newgame"
+        android:text="@string/new_game"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -202,7 +202,7 @@
         android:layout_alignRight="@+id/tv0Points"
         android:background="@color/colorPrimary"
         android:padding="8dp"
-        android:text="@string/resetgame"
+        android:text="@string/reset_game"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 

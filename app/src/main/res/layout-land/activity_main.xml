@@ -182,7 +182,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/newgame"
+            android:text="@string/new_game"
             android:textColor="#ffffff"
             android:textSize="30sp"
             android:visibility="visible" />
@@ -193,7 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/resetgame"
+            android:text="@string/reset_game"
             android:textColor="#ffffff"
             android:textSize="30sp"
             android:layout_marginLeft="130dp" />
